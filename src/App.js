@@ -1,12 +1,28 @@
-import { FaReact } from 'react-icons/fa';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './css/Tailwind.css';
+import Home from "./pages/Home";
+import Admin from "./pages/Admin";
+
 
 function App() {
   return (
-    <div className="bg-red-500">
-      <h1 className='text-whte'>Welcome to My React App <FaReact /></h1>
+    <div className="">
+      <BrowserRouter>
+        <Home />
+
+        <div className="">
+
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/admin" element={<Admin />} />
+
+          </Routes>
+        </div>
+
+      </BrowserRouter>
     </div>
   );
 }
+
 
 export default App;
