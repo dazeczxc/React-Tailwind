@@ -1,19 +1,17 @@
 import React, { useState } from 'react';
-import { FaArrowLeft, FaBars } from 'react-icons/fa';
 import { HiMenuAlt3 } from 'react-icons/hi';
 import { MdOutlineDashboard } from 'react-icons/md';
-
-import { Link } from "react-router-dom";
+import { Link, Routes, Route} from "react-router-dom";
+import Orgs from "../pages/Orgs";
+import Employee from "../pages/Employee";
 
 function Admin() {
     const [open, setOpen] = useState(false);
     const menus = [
-        {name: "Dashboard1", link: "/", icon: MdOutlineDashboard},
-        {name: "Dashboard2", link: "/", icon: MdOutlineDashboard},
-        {name: "Dashboard3", link: "/", icon: MdOutlineDashboard},
-        {name: "Dashboard4", link: "/", icon: MdOutlineDashboard},
-        {name: "Dashboard5", link: "/", icon: MdOutlineDashboard}
-    ];
+        {name: "Org Chart", link: "/orgs", icon: MdOutlineDashboard},
+        {name: "Employee", link: "/employee", icon: MdOutlineDashboard},
+        {name: "Settings", link: "/", icon: MdOutlineDashboard},
+      ];
 
     return (
         <div>
@@ -44,7 +42,15 @@ function Admin() {
                 
 
                 <div className=' text-2xl font-semibold flex-1 h-screen'>
-                    <h1>Content Page 1</h1>
+                    <h1>Test</h1>
+                        
+                    {/* <Routes>
+                        <Route path="/" element={<Admin />} />
+                        <Route path="/orgs" element={<Orgs />} />
+                        <Route path="/employee" element={<Employee />} />
+
+                    </Routes> */}
+                        
                 </div>
             </div>
         </div>
