@@ -8,7 +8,7 @@ function Orgs() {
     <div>
         <div className='flex gap-6 '>
 
-        {/* <Sidebar /> */}
+        <Sidebar />
 
         <div className=' text-2xl font-semibold flex-1 h-screen'>
             <h1>Orgs</h1>                
