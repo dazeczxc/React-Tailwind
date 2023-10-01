@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <div className="">
-        <Link to="/admin">Admin</Link>
+        <Link to="/admin">Link to Admin</Link>
 
     </div>
   );
